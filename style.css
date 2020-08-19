@@ -1,0 +1,91 @@
+body{
+    background:url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Space Mono', monospace;
+    color:seashell;
+}
+header{
+    background-color: hsla(160, 100%, 75%,0.2);
+    width:70%;
+    margin: 0 auto;
+    border-radius: 2em;
+    box-shadow: 1px 1px 0.9px aquamarine,-1px -1px 0.9px aquamarine;
+}
+header h1{
+    text-align: center;
+    padding:0.5em;
+}
+header p{
+    text-align: center;
+    font-family: monospace;
+}
+::placeholder{
+    color:salmon;
+}
+
+.rad{
+    padding:0;
+    height: 1em;
+    text-align: left;
+    width:5%;
+    margin:0;
+}
+form{
+    width:70%;
+    margin:2em auto;
+    background-color: hsla(30, 100%, 75%,0.3);
+    text-align: left;
+    border-radius: 12px;
+    padding:2em 4em;
+}
+form input{
+    margin:0.6em;
+    padding:0 0.7em;
+    color:white;
+    letter-spacing: 0.1em;
+    width: 90%;
+    background-color: hsla(108, 80%, 50%, 0.2);
+    border-radius: 2em;
+    height: 3em;
+}
+form select{
+    width: 50%;
+    display: block;
+    color:rgb(230, 149, 56);
+    background-color: hsla(108, 80%, 50%, 0.2);
+    border-radius: 2em;
+    height: 3em;
+}
+option{
+    color:black;
+}
+form textarea{
+    background-color:rgba(255,255,255,0.3);
+    width:90%;
+    border:0.3em double black;
+    font-size: 1.3em;
+    color:hsla(0, 0%, 0%,0.7);
+    height:6em;
+}
+button{
+    width:60%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.7623249128753063) 0%, rgba(104,240,131,0.8183473218388918) 36%, rgba(0,212,255,0.6782912994299282) 100%);
+    color:crimson;
+    height: 2.5em;
+    font-size:1.7em;
+    border-radius: 1.7em;
+}
+#but{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: black;
+    width:100%;
+    height:1em;
+    text-align:center;
+}

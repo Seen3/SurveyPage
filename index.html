@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Simple Survey Form</h1>
+        <p id="description">This is a sample survey form.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" name="name" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">E-mail:</label>
+                <input type="email" placeholder="Enter your E-mail address" id="email" name="mail" required>
+            </div>
+            <div>
+                <label id="number-label" for="number">Age(optional):</label>
+                <input type="number" placeholder="Enter your age" id="number" name="age" min=10 max=110>
+            </div>
+            <hr>
+            <div>
+                <label id="occupation-label" for="occupation" required>Which option best describes your current role?:</label>
+                <select placeholder="Select Current Role" id="occupation" name="occupation" >
+                    <option value="" selected disabled>Select Currrent Role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Working</option>
+                    <option value="retire">Retired</option>
+                    <option value="shy">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <p>Do you like this form?</p>
+                <input class="rad" type="radio" id="likingY" name="yes" value="yes" checked> 
+                <label id="like" for="likingY">Yes</label>
+                <br>
+                <input type="radio" class="rad" id="likingYY" name="yes" value="Defyes">
+                <label id="like2" for="likingYY">Definately Yes</label>
+                <br>
+                <input type="radio" id="dislike" class="rad" name="yes" value="no" disabled>
+                <label id="like3" for="dislike">No</label>
+                <br>
+            </div>
+            <hr>
+            <div>
+                <label id="about-me-label" for="dropdown" required>What do you love about me the best?</label>
+                <select placeholder="Select Current Role" id="dropdown" name="occupation" >
+                    <option value="" selected disabled>Select Something to love</option>
+                    <option value="cool">You're Cool</option>
+                    <option value="humor">You've got a great sense of humor</option>
+                    <option value="hate" disabled>I don't like you, go to hell..</option>
+                    <option value="hehe">The fact that you disabled Every Negative Choice</option>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <p>
+                    So, what should I expect from you?
+                </p>
+                <span>(Check all that apply)</span>
+                <br>
+                <label><input name="expec" class="rad" value="job-offers" type="checkbox">Job-Offers</label><br>
+                <label><input name="expec" value="treat"class="rad" type="checkbox">A treat to pizza/coffee or something similar</label><br>
+                <label><input name="expec" value="punch" class="rad" disabled type="checkbox">A jaw-breaking punch</label><br>
+                <label><input name="expec" value="doom" class="rad" type="checkbox">Loads of Love</label><br>
+
+            </div>
+            <hr>
+            <div>
+                <p>Any Comments or Suggesstions?</p>
+                <textarea id="comments" placeholder="Enter comments here.." name="comment"></textarea>
+            </div>
+            <div id="but">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        Made By Taseen:
+        littlefinger331@gmail.com
+    </footer>
+</body>
+</html>
